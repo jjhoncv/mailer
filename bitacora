@@ -1,0 +1,20 @@
+Plantillas <----- Api <----- Data
+  <html/>       mail/123      {}
+   CRUD           
+    create
+    edit
+    list
+    delete 
+
+- cada usuario deberia subir sus emails
+- el new deberia subir el html -> al server
+- Con un visor para ver el mail
+- La data se debe de parsear {} con el html, handelbars
+- cada plantilla de mail debe de tener un nombre unico donde es validado al crearla.
+
+- Cada usuario podra crear secciones anidadas y en cada seccion poder agregar sus plantillas.
+
+
+
+
+ 
