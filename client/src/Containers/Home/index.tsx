@@ -12,11 +12,15 @@ export class Home extends React.Component<IHome> {
     super(props)
   }
 
+  submit(e: any) {
+    e.preventDefault();
+    alert('alert');
+  }
   render() {
     return (
       <div>
         <Header />
-        <Login />
+        <Login onSubmit={this.submit} />
         <Footer />
       </div>
     )

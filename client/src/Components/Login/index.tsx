@@ -2,7 +2,7 @@ import * as React from 'react'
 import { FormStyled, FormItemStyled } from './styled'
 
 interface ILogin {
-
+  onSubmit: Function;
 }
 
 export class Login extends React.Component<ILogin> {
@@ -11,9 +11,10 @@ export class Login extends React.Component<ILogin> {
   }
 
   render() {
+    const { onSubmit } = this.props;
     return (
       <div>
-        <FormStyled>
+        <FormStyled onSubmit={(e) => onSubmit(e)}>
           <FormItemStyled>
             <label>Username:</label>
             <input type="text" name="user" />
