@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
     "jsx": "react",
-    "module": "ESNext",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "target": "es5"
+    "target": "es5",
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2015.promise"
+    ]
   },
   "exclude": [
     "node_modules"

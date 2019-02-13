@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import { FormStyled, FormItemStyled } from './styled'
 
 interface ILogin {
 
 }
 
-export class Login extends Component<ILogin> {
+export class Login extends React.Component<ILogin> {
   constructor(props: ILogin) {
     super(props)
   }
