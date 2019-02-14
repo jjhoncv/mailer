@@ -1,0 +1,30 @@
+[roles]
+id | name  | order
+1  | Admin | 0
+2  | User  | 0
+
+[users]
+id | role | name    |  login  | pass
+1  |  1   |  admin  |  admin  | 123456
+2  |  2   | neoauto |  neousr | neo123
+3  |  2   | urbania |  urbusr | urb123
+
+[categories]
+id | parent | user | name          | order
+1  |   0    |  2   | campaign1     |  0
+2  |   0    |  3   | campaign2     |  1
+3  |   1    |  2   | fair toyota   |  0
+4  |   1    |  3   | national holy |  1
+5  |   2    |  2   | passion week  |  0
+6  |   2    |  3   | new year      |  1
+
+[templates]
+id | categorie | user | name | description | order 
+1  |    3      |  2   |  xx  |    xxxx     | 0
+2  |    3      |  2   |  xx  |    xxxx     | 1
+3  |    3      |  2   |  xx  |    xxxx     | 2
+4  |    4      |  2   |  xx  |    xxxx     | 2
+
+
+
+id name -- modules
