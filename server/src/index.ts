@@ -8,4 +8,4 @@ const app: express.Application = express();
 app.use(express.static(path.join(__dirname, '../../public')))
 app.use('/', indexController);
 
-app.listen(3030)
+app.listen(3000)
