@@ -37,3 +37,12 @@ id | categorie | user | name | description | order
 
 
 id name -- modules
+
+
+cli -> user, pass
+server (user, pass) -> crea token(id, user), crea http-cookie(token) -> devuelve a cliente id
+
+cli -> /perfil 
+    -> id
+
+server -> /perfil (valida id corresponde con el token que creo que lo tiene en http-cookie)
