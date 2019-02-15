@@ -6,15 +6,15 @@ Project to send emails.
 Requirements
 ------------
 
-  * Node 9.5.0;
+* Docker 18.09.2
 
 Installation
 ------------
 
-Install the project and run this command:
+To install run this command:
 
-```bash
-$ npm install
+```makefile
+make install
 ```
 
 Usage
@@ -22,6 +22,6 @@ Usage
 
 There's no need to configure anything to run the application. <http://localhost:3000>:
 
-```bash
-$ npm run start
+```makefile
+make watch
 ```

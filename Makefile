@@ -49,6 +49,14 @@ up:
 	@make watch-server
 	@make watch-client
 
+install:
+	@make install-client
+	@make install-server
+
+watch:
+	@make watch-server
+	@make watch-client
+
 build:
 	@make run \
 	NODE_COMMAND='yarn build $(TASK)'
