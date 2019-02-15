@@ -37,25 +37,23 @@ watch-server:
 
 watch-client:
 	@make run \
-	PROJECT='client' \
+	PROJECT=$(PROJECT) \
 	DETACHED='-d' \
 	NETWORK='--network $(NETWORK_NAME)' \
 	NODE_COMMAND='npm run start' \
 	PORT='-p 3131:3131'
 
 up:
-	@make install-client
-	@make install-server
-	@make watch-server
-	@make watch-client
+	@make install 
+	@make watch
 
 install:
-	@make install-client
-	@make install-server
+	@make install project=client
+	@make install project=server
 
 watch:
-	@make watch-server
-	@make watch-client
+	@make watch project=server
+	@make watch project=client
 
 build:
 	@make run \
